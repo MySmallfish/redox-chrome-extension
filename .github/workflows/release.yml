@@ -61,8 +61,12 @@ jobs:
       - name: Read package metadata
         id: package
         run: |
-          echo "version=$(node -p 'JSON.parse(require("fs").readFileSync("artifacts/package-info.json")).version')" >> "$GITHUB_OUTPUT"
-          echo "zip_path=$(node -p 'JSON.parse(require("fs").readFileSync("artifacts/package-info.json")).zipPath')" >> "$GITHUB_OUTPUT"
+          node <<'NODE' >> "$GITHUB_OUTPUT"
+          const fs = require("fs");
+          const info = JSON.parse(fs.readFileSync("artifacts/package-info.json", "utf8"));
+          console.log(`version=${info.version}`);
+          console.log(`zip_path=${info.zipPath}`);
+          NODE
 
       - name: Create GitHub release
         env:
@@ -92,12 +96,54 @@ jobs:
               --notes-file "$notes_file"
           fi
 
+  deploy-chrome-store:
+    name: Deploy to Chrome Web Store
+    if: ${{ github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' }}
+    needs: release
+    runs-on: ubuntu-latest
+    environment: store
+
+    steps:
+      - name: Check out target branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.ref }}
+          fetch-depth: 0
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Package extension
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PACKAGE_BUILD_NUMBER: ${{ github.run_number }}
+        run: pnpm run package -- --out artifacts
+
+      - name: Read package metadata
+        id: package
+        run: |
+          node <<'NODE' >> "$GITHUB_OUTPUT"
+          const fs = require("fs");
+          const info = JSON.parse(fs.readFileSync("artifacts/package-info.json", "utf8"));
+          console.log(`zip_path=${info.zipPath}`);
+          NODE
+
       - name: Deploy to Chrome Web Store
-        if: ${{ github.event.pull_request.base.ref == 'main' }}
         env:
           PACKAGE_ZIP: ${{ steps.package.outputs.zip_path }}
-          CHROME_WEBSTORE_PUBLISHER_ID: ${{ vars.CHROME_WEBSTORE_PUBLISHER_ID }}
-          CHROME_EXTENSION_ID: ${{ vars.CHROME_EXTENSION_ID }}
+          CHROME_WEBSTORE_PUBLISHER_ID: ${{ vars.CHROME_WEBSTORE_PUBLISHER_ID || secrets.CHROME_WEBSTORE_PUBLISHER_ID }}
+          CHROME_EXTENSION_ID: ${{ vars.CHROME_EXTENSION_ID || secrets.CHROME_EXTENSION_ID }}
           CHROME_WEBSTORE_CLIENT_ID: ${{ secrets.CHROME_WEBSTORE_CLIENT_ID }}
           CHROME_WEBSTORE_CLIENT_SECRET: ${{ secrets.CHROME_WEBSTORE_CLIENT_SECRET }}
           CHROME_WEBSTORE_REFRESH_TOKEN: ${{ secrets.CHROME_WEBSTORE_REFRESH_TOKEN }}

@@ -35,18 +35,18 @@ PACKAGE_VERSION=0.1.1.42 pnpm run package
 
 `.github/workflows/release.yml` runs when any PR is merged into its base branch. It checks out the target branch, reruns lint/tests/E2E, creates a bumped ZIP package, and publishes a GitHub Release tagged with the packaged version.
 
-When the PR target branch is `main`, the same workflow also attempts to upload and publish the package to the Chrome Web Store. If any Chrome Web Store variable or secret is missing, deployment is skipped without failing the release.
+When the PR target branch is `main`, a separate deploy job runs in the GitHub Environment named `store` and attempts to upload and publish the package to the Chrome Web Store. If any Chrome Web Store variable or secret is missing, deployment is skipped without failing the release.
 
 ## Chrome Web Store Setup
 
 The Chrome Web Store deploy step uses the Chrome Web Store API v2. Google requires the extension package manifest version to increase for each upload. The package workflow handles that by stamping the ZIP with a unique fourth version segment.
 
-Repository variables:
+Create a GitHub Environment named `store`, then add these environment variables or secrets:
 
 - `CHROME_WEBSTORE_PUBLISHER_ID`: Publisher ID from the Chrome Web Store Developer Dashboard.
 - `CHROME_EXTENSION_ID`: Existing Chrome Web Store item ID.
 
-Repository secrets:
+Add these as environment secrets:
 
 - `CHROME_WEBSTORE_CLIENT_ID`: Google OAuth client ID.
 - `CHROME_WEBSTORE_CLIENT_SECRET`: Google OAuth client secret.
