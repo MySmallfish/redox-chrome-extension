@@ -1,0 +1,68 @@
+name: PR package
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - ready_for_review
+      - synchronize
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-package-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  package:
+    name: Test and package extension
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Unit tests
+        run: pnpm test
+
+      - name: End-to-end tests
+        run: xvfb-run --auto-servernum pnpm test:e2e
+
+      - name: Package extension
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PACKAGE_BUILD_NUMBER: ${{ github.run_number }}
+        run: pnpm run package -- --out artifacts
+
+      - name: Upload test package
+        uses: actions/upload-artifact@v4
+        with:
+          name: redox-extension-pr-${{ github.event.pull_request.number }}
+          path: |
+            artifacts/*.zip
+            artifacts/package-info.json
+          retention-days: 14
+          if-no-files-found: error

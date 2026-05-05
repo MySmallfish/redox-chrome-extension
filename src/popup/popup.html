@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redox Property Tracker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="brand">
+          <img class="brand-logo" src="assets/logo.svg" alt="Redox" />
+        </div>
+        <div class="header-actions">
+          <div class="brand-row">
+            <div class="brand-title" id="brand-title">
+              &#x05D1;&#x05E8;&#x05D5;&#x05DB;&#x05D9;&#x05DD; &#x05D4;&#x05D1;&#x05D0;&#x05D9;&#x05DD;!
+            </div>
+            <button id="logout-btn" class="link-btn" type="button"></button>
+          </div>
+          <div id="header-message" class="header-message"></div>
+        </div>
+      </header>
+      <div class="tabs">
+        <button class="tab-btn" data-tab="current" type="button"></button>
+        <button class="tab-btn" data-tab="tracked" type="button"></button>
+      </div>
+      <main id="view" class="view"></main>
+      <div class="illustration">
+        <img src="assets/agent-illustration.png" alt="" />
+      </div>
+    </div>
+
+    <template id="tpl-login-request">
+      <section class="panel">
+        <h2>{{t:login.title}}</h2>
+        <form id="request-code-form" class="form">
+          <label>
+            <span>{{t:login.contactLabel}}</span>
+            <input type="text" name="contact" required />
+          </label>
+          <button type="submit" class="primary">{{t:login.sendCode}}</button>
+        </form>
+      </section>
+    </template>
+
+    <template id="tpl-login-verify">
+      <section class="panel">
+        <h2>{{t:login.title}}</h2>
+        <form id="verify-code-form" class="form">
+          <label>
+            <span>{{t:login.codeLabel}}</span>
+            <input type="text" name="code" inputmode="numeric" pattern="[0-9]*" maxlength="4" required />
+          </label>
+          <div class="inline-actions">
+            <button type="submit" class="primary">{{t:login.verify}}</button>
+            <button id="resend-code-btn" type="button" class="secondary">{{t:login.sendCode}}</button>
+          </div>
+        </form>
+      </section>
+    </template>
+
+    <template id="tpl-login-pending">
+      <section class="panel">
+        <div class="spinner"></div>
+        <p>{{t:login.sending}}</p>
+      </section>
+    </template>
+
+    <template id="tpl-current-detecting">
+      <section class="panel">
+        <div class="spinner"></div>
+        <p>{{t:current.detecting}}</p>
+      </section>
+    </template>
+
+    <template id="tpl-current-not-detected">
+      <section class="panel">
+        <p>{{t:current.notDetected}}</p>
+      </section>
+    </template>
+
+    <template id="tpl-current-detected">
+      <section class="panel">
+        <div class="card">
+          <div class="card-title">{{property.title}}</div>
+          <div class="card-sub">{{property.address}}</div>
+          <div class="card-sub">{{property.city}}</div>
+          <div class="pill-row">
+            <span class="pill">{{property.rooms}}</span>
+            <span class="pill">{{property.area}}</span>
+            <span class="pill">{{property.floor}}</span>
+          </div>
+          <div class="price">{{property.price}}</div>
+        </div>
+        <p class="muted">{{t:current.localHint}}</p>
+        <div class="actions">
+          <button id="track-btn" class="secondary">{{t:current.trackLocal}}</button>
+          <button id="send-redox-btn" class="primary">
+            {{t:current.sendRedox}}
+          </button>
+        </div>
+        <div class="section-divider"></div>
+        <div class="info-row">
+          <span>{{t:current.seenLabel}} {{local.visits}}</span>
+          <span>{{t:current.lastSeenLabel}} {{local.lastSeen}}</span>
+        </div>
+        <p class="muted">{{local.changeText}}</p>
+        <div class="form">
+          <label>
+            <span>{{t:current.commentLabel}}</span>
+            <div class="input-row">
+              <input
+                id="comment-input"
+                type="text"
+                placeholder="{{t:current.commentPlaceholder}}"
+              />
+              <button id="add-comment-btn" class="secondary add-btn" type="button">+</button>
+            </div>
+          </label>
+          <div id="comments-list" class="comment-list"></div>
+          <label>
+            <span>{{t:current.tags}}</span>
+            <div class="tag-input" id="tags-input-wrapper">
+              <div id="tags-list" class="tag-list inline"></div>
+              <input
+                id="tags-input"
+                type="text"
+                placeholder="{{t:current.tagPlaceholder}}"
+              />
+            </div>
+          </label>
+          <label>
+            <span>{{t:current.reminder}}</span>
+            <div class="form-row">
+              <input id="reminder-input" type="date" value="{{local.reminderAt}}" />
+              <button id="save-local-btn" class="secondary save-inline" type="button">
+                {{t:current.saveLocal}}
+              </button>
+            </div>
+          </label>
+          <p class="muted">{{t:current.reminderHint}}</p>
+        </div>
+        <div class="actions">
+          <button id="copy-summary-btn" class="secondary" type="button">
+            {{t:current.copySummary}}
+          </button>
+          <button id="share-btn" class="secondary icon-btn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.1-4.11c.05-.23.06-.47.06-.74s-.02-.51-.06-.74l7.06-4.07A2.99 2.99 0 0 0 18 7.91a3 3 0 1 0-2.83-4 3 3 0 0 0 .17 2.1L8.24 10.1a3 3 0 1 0 0 3.8l7.1 4.11a3 3 0 1 0 2.66-1.93Z"
+              />
+            </svg>
+            {{t:current.share}}
+          </button>
+        </div>
+      </section>
+    </template>
+
+    <template id="tpl-current-tracked">
+      <section class="panel">
+        <div class="card">
+          <div class="card-title">{{property.title}}</div>
+          <div class="card-sub">{{property.address}}</div>
+          <div class="card-sub">{{property.city}}</div>
+          <div class="pill-row">
+            <span class="pill">{{property.rooms}}</span>
+            <span class="pill">{{property.area}}</span>
+            <span class="pill">{{property.floor}}</span>
+          </div>
+          <div class="price">{{property.price}}</div>
+        </div>
+        <div class="status-pill">{{trackedLabel}}</div>
+        <div class="info-row">
+          <span>{{t:current.seenLabel}} {{local.visits}}</span>
+          <span>{{t:current.lastSeenLabel}} {{local.lastSeen}}</span>
+        </div>
+        <p class="muted">{{local.changeText}}</p>
+        <div class="signals">
+          <h3>{{t:current.signalsTitle}}</h3>
+          <div id="signals-list" class="signals-list"></div>
+        </div>
+        <div class="actions">
+          <button id="send-redox-btn" class="primary" type="button">
+            {{t:current.sendRedox}}
+          </button>
+        </div>
+        <div class="actions inline secondary-actions">
+          <button id="open-redox-btn" class="secondary" type="button">{{t:actions.openRedox}}</button>
+          <button id="open-source-btn" class="secondary" type="button">{{t:actions.openSource}}</button>
+        </div>
+        <div class="section-divider"></div>
+        <div class="form">
+          <label>
+            <span>{{t:current.commentLabel}}</span>
+            <div class="input-row">
+              <input
+                id="comment-input"
+                type="text"
+                placeholder="{{t:current.commentPlaceholder}}"
+              />
+              <button id="add-comment-btn" class="secondary add-btn" type="button">+</button>
+            </div>
+          </label>
+          <div id="comments-list" class="comment-list"></div>
+          <label>
+            <span>{{t:current.tags}}</span>
+            <div class="tag-input" id="tags-input-wrapper">
+              <div id="tags-list" class="tag-list inline"></div>
+              <input
+                id="tags-input"
+                type="text"
+                placeholder="{{t:current.tagPlaceholder}}"
+              />
+            </div>
+          </label>
+          <label>
+            <span>{{t:current.reminder}}</span>
+            <div class="form-row">
+              <input id="reminder-input" type="date" value="{{local.reminderAt}}" />
+              <button id="save-local-btn" class="secondary save-inline" type="button">
+                {{t:current.saveLocal}}
+              </button>
+            </div>
+          </label>
+          <p class="muted">{{t:current.reminderHint}}</p>
+        </div>
+        <div class="actions">
+          <button id="copy-summary-btn" class="secondary" type="button">
+            {{t:current.copySummary}}
+          </button>
+          <button id="share-btn" class="secondary icon-btn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.1-4.11c.05-.23.06-.47.06-.74s-.02-.51-.06-.74l7.06-4.07A2.99 2.99 0 0 0 18 7.91a3 3 0 1 0-2.83-4 3 3 0 0 0 .17 2.1L8.24 10.1a3 3 0 1 0 0 3.8l7.1 4.11a3 3 0 1 0 2.66-1.93Z"
+              />
+            </svg>
+            {{t:current.share}}
+          </button>
+        </div>
+      </section>
+    </template>
+
+    <template id="tpl-current-track-failed">
+      <section class="panel">
+        <p>{{t:current.trackFailed}}</p>
+        <div class="actions">
+          <button id="track-btn" class="secondary">{{t:current.trackLocal}}</button>
+          <button id="send-redox-btn" class="primary">
+            {{t:current.sendRedox}}
+          </button>
+        </div>
+        <div class="section-divider"></div>
+        <div class="form">
+          <label>
+            <span>{{t:current.commentLabel}}</span>
+            <div class="input-row">
+              <input
+                id="comment-input"
+                type="text"
+                placeholder="{{t:current.commentPlaceholder}}"
+              />
+              <button id="add-comment-btn" class="secondary add-btn" type="button">+</button>
+            </div>
+          </label>
+          <div id="comments-list" class="comment-list"></div>
+          <label>
+            <span>{{t:current.tags}}</span>
+            <div class="tag-input" id="tags-input-wrapper">
+              <div id="tags-list" class="tag-list inline"></div>
+              <input
+                id="tags-input"
+                type="text"
+                placeholder="{{t:current.tagPlaceholder}}"
+              />
+            </div>
+          </label>
+          <label>
+            <span>{{t:current.reminder}}</span>
+            <div class="form-row">
+              <input id="reminder-input" type="date" value="{{local.reminderAt}}" />
+              <button id="save-local-btn" class="secondary save-inline" type="button">
+                {{t:current.saveLocal}}
+              </button>
+            </div>
+          </label>
+          <p class="muted">{{t:current.reminderHint}}</p>
+        </div>
+        <div class="actions">
+          <button id="copy-summary-btn" class="secondary" type="button">
+            {{t:current.copySummary}}
+          </button>
+          <button id="share-btn" class="secondary icon-btn" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18 16.08c-.76 0-1.44.3-1.96.77l-7.1-4.11c.05-.23.06-.47.06-.74s-.02-.51-.06-.74l7.06-4.07A2.99 2.99 0 0 0 18 7.91a3 3 0 1 0-2.83-4 3 3 0 0 0 .17 2.1L8.24 10.1a3 3 0 1 0 0 3.8l7.1 4.11a3 3 0 1 0 2.66-1.93Z"
+              />
+            </svg>
+            {{t:current.share}}
+          </button>
+        </div>
+      </section>
+    </template>
+
+    <template id="tpl-tracked-list">
+      <section class="panel">
+        <h2>{{t:tracked.titleLocal}}</h2>
+        <div id="local-tracked-items" class="tracked-items"></div>
+        <div class="section-divider"></div>
+        <h3>{{t:tracked.compareTitle}}</h3>
+        <p class="muted">{{t:tracked.compareHint}}</p>
+        <div id="compare-table" class="compare-table"></div>
+        <div class="section-divider"></div>
+        <h3>{{t:tracked.remindersTitle}}</h3>
+        <div id="reminders-list" class="tracked-items"></div>
+        <div class="section-divider"></div>
+        <h2>{{t:tracked.titleRedox}}</h2>
+        <p id="redox-login-hint" class="muted"></p>
+        <div id="tracked-items" class="tracked-items"></div>
+      </section>
+    </template>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

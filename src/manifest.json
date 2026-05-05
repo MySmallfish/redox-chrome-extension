@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "REdox \u05de\u05e2\u05e7\u05d1 \u05e0\u05db\u05e1\u05d9\u05dd",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "REdox \u05de\u05e2\u05e7\u05d1 \u05e0\u05db\u05e1\u05d9\u05dd",
+    "default_icon": {
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png",
+      "128": "assets/icon-128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "tabs", "sidePanel", "scripting"],
+  "icons": {
+    "16": "assets/icon-16.png",
+    "32": "assets/icon-32.png",
+    "48": "assets/icon-48.png",
+    "128": "assets/icon-128.png"
+  },
+  "host_permissions": [
+    "https://yad2.co.il/*",
+    "https://*.yad2.co.il/*",
+    "https://madlan.co.il/*",
+    "https://*.madlan.co.il/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://yad2.co.il/*",
+        "https://*.yad2.co.il/*",
+        "https://madlan.co.il/*",
+        "https://*.madlan.co.il/*",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
+
+
