@@ -51,6 +51,13 @@ Add these as environment secrets:
 - `CHROME_WEBSTORE_CLIENT_ID`: Google OAuth client ID.
 - `CHROME_WEBSTORE_CLIENT_SECRET`: Google OAuth client secret.
 - `CHROME_WEBSTORE_REFRESH_TOKEN`: Refresh token authorized with `https://www.googleapis.com/auth/chromewebstore`.
+- `REDOX_SECURITY_CODE_API_KEY`: Redox client API key used for `/SecurityCode`.
+- `REDOX_TOKEN_API_KEY`: Redox client API key used for `/Token`.
+
+Optional environment variables:
+
+- `REDOX_SECURITY_CODE_API_KEY`: Same value as the secret above if you intentionally want non-secret environment variables.
+- `REDOX_TOKEN_API_KEY`: Same value as the secret above if you intentionally want non-secret environment variables.
 
 Google setup required:
 

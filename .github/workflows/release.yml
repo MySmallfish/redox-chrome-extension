@@ -56,6 +56,8 @@ jobs:
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           PACKAGE_BUILD_NUMBER: ${{ github.run_number }}
+          REDOX_SECURITY_CODE_API_KEY: ${{ vars.REDOX_SECURITY_CODE_API_KEY }}
+          REDOX_TOKEN_API_KEY: ${{ vars.REDOX_TOKEN_API_KEY }}
         run: pnpm run package -- --out artifacts
 
       - name: Read package metadata
@@ -128,6 +130,8 @@ jobs:
         env:
           PR_NUMBER: ${{ github.event.pull_request.number }}
           PACKAGE_BUILD_NUMBER: ${{ github.run_number }}
+          REDOX_SECURITY_CODE_API_KEY: ${{ vars.REDOX_SECURITY_CODE_API_KEY || secrets.REDOX_SECURITY_CODE_API_KEY }}
+          REDOX_TOKEN_API_KEY: ${{ vars.REDOX_TOKEN_API_KEY || secrets.REDOX_TOKEN_API_KEY }}
         run: pnpm run package -- --out artifacts
 
       - name: Read package metadata

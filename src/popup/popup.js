@@ -39,12 +39,13 @@ const apiBaseOverride = queryParams.get("apiBaseUrl");
 const mockEnabled = queryParams.get("mock") === "1";
 const AUTH_BASE_URL = "https://redox-api.redox.co.il/clientapi";
 const REDOX_APP_BASE_URL = "http://localhost:1721";
-const SECURITY_CODE_HEADERS = {
-  "X-Redox-Scope": "SecurityCode"
-};
-const TOKEN_HEADERS = {
-  "X-Redox-Scope": "Token"
-};
+const SECURITY_CODE_API_KEY = __REDOX_SECURITY_CODE_API_KEY__;
+const TOKEN_API_KEY = __REDOX_TOKEN_API_KEY__;
+const SECURITY_CODE_HEADERS = scopedApiKeyHeaders(
+  "SecurityCode",
+  SECURITY_CODE_API_KEY
+);
+const TOKEN_HEADERS = scopedApiKeyHeaders("Token", TOKEN_API_KEY);
 
 const storage = defaultStorage();
 const i18n = createI18n({ he, en }, "he");
@@ -533,6 +534,14 @@ async function authPost(path, payload, headers) {
   } finally {
     clearTimeout(timeoutId);
   }
+}
+
+function scopedApiKeyHeaders(scope, apiKey) {
+  const headers = { "X-Redox-Scope": scope };
+  if (apiKey) {
+    headers.Authorization = `Bearer ${apiKey}`;
+  }
+  return headers;
 }
 
 async function authGet(path, token) {

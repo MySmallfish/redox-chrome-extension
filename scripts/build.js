@@ -4,6 +4,8 @@ import path from "path";
 
 const watch = process.argv.includes("--watch");
 const outdir = "dist";
+const securityCodeApiKey = process.env.REDOX_SECURITY_CODE_API_KEY || "";
+const tokenApiKey = process.env.REDOX_TOKEN_API_KEY || "";
 
 const staticFiles = [
   { src: "src/popup/popup.html", dest: "dist/popup.html" },
@@ -27,7 +29,11 @@ const buildConfig = {
   target: "es2020",
   sourcemap: watch,
   logLevel: "info",
-  legalComments: "none"
+  legalComments: "none",
+  define: {
+    __REDOX_SECURITY_CODE_API_KEY__: JSON.stringify(securityCodeApiKey),
+    __REDOX_TOKEN_API_KEY__: JSON.stringify(tokenApiKey)
+  }
 };
 
 if (watch) {
