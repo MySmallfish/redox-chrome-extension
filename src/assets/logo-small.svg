@@ -1,0 +1,91 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      /* --- BLUE ON WHITE THEME --- */
+      
+      /* Main Brand Color (Blue) */
+      .brand-blue { stroke: #00AEEF; }
+      .brand-blue-fill { fill: #00AEEF; stroke: none; }
+      
+      /* Background Color (White) - Used for masking */
+      .bg-white-fill { fill: #FFFFFF; }
+      .bg-white-stroke { stroke: #FFFFFF; }
+
+      /* Stroke Widths */
+      .thick { stroke-width: 18; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .thin { stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      
+      /* Pen Specifics */
+      .pen-outline { 
+        stroke-width: 4; 
+        stroke-linecap: butt; 
+        stroke-linejoin: round;
+        fill: #FFFFFF; /* White fill to hide lines behind pen */
+      }
+      .pen-detail { 
+        stroke-width: 3; 
+        stroke-linecap: round; 
+        stroke-linejoin: round;
+        fill: none;
+      }
+      
+      /* Masking "Halo" - Must match background color (White) */
+      .pen-gap-mask {
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="400" height="400" fill="#FFFFFF"></rect>
+
+  <g transform="translate(20, 40)">
+      
+      <path class="brand-blue thick" d="
+        M 210,270 L 210,50 
+        L 80,50 Q 40,50 40,90 
+        L 40,230 Q 40,270 80,270 
+        L 150,270
+      "></path>
+      
+      <path class="brand-blue thick" d="
+        M 210,50 
+        Q 320,50 320,120 
+        Q 320,190 210,190
+        M 245,190 
+        L 330,270
+      "></path>
+
+      <line class="brand-blue thin" x1="80" y1="100" x2="140" y2="100"></line>
+      <line class="brand-blue thin" x1="80" y1="150" x2="125" y2="150"></line>
+      <line class="brand-blue thin" x1="80" y1="200" x2="100" y2="200"></line>
+
+      <path class="brand-blue" stroke-width="7" stroke-linecap="round" fill="none" d="M 60,235 Q 80,220 100,235 T 140,235"></path>
+
+
+      <g transform="translate(135, 175) rotate(45)">
+        
+        <path class="pen-gap-mask" d="M -11,45 L -11,-60 A 11,11 0 0 1 11,-60 L 11,45"></path>
+        <path class="pen-gap-mask" d="M -13,45 Q 0,80 0,80 Q 0,80 13,45 Z"></path>
+
+        <path class="brand-blue pen-outline" d="
+          M -11,45 
+          L -11,-60 
+          A 11,11 0 0 1 11,-60 
+          L 11,45
+        "></path>
+        
+        <path class="brand-blue-fill" d="
+          M -13,45 
+          Q 0,80 0,80 
+          Q 0,80 13,45 
+          Z
+        "></path>
+        
+        <rect x="-5" y="-50" width="10" height="30" rx="2" class="brand-blue pen-detail"></rect>
+      </g>
+  </g>
+</svg>

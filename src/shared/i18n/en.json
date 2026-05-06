@@ -1,0 +1,92 @@
+{
+  "login": {
+    "title": "Sign in",
+    "contactLabel": "Email or phone",
+    "sendCode": "Send code",
+    "codeLabel": "Verification code",
+    "verify": "Verify",
+    "sending": "Sending verification code..."
+  },
+  "header": {
+    "welcomeGuest": "Welcome!",
+    "welcomeUser": "Welcome {{name}}!",
+    "signedOut": "You have been signed out",
+    "redoxGreeting": "Viewing Redox app"
+  },
+  "actions": {
+    "login": "Sign in",
+    "logout": "Log out",
+    "openSource": "Source",
+    "openRedox": "Redox",
+    "refresh": "Refresh"
+  },
+  "tabs": {
+    "current": "Current Page",
+    "tracked": "Tracked"
+  },
+  "status": {
+    "loggedIn": "Signed in",
+    "loggedOut": "Guest"
+  },
+  "current": {
+    "detecting": "Detecting property...",
+    "notDetected": "No property detected on this page",
+    "trackLocal": "Track locally",
+    "sendRedox": "Send to Redox",
+    "localHint": "Track locally to save comments, tags, and reminders.",
+    "commentLabel": "Comments",
+    "commentPlaceholder": "Write a short comment and press Enter",
+    "noComments": "No comments yet",
+    "tags": "Tags",
+    "tagPlaceholder": "Add a tag and press Enter",
+    "noTags": "No tags yet",
+    "reminder": "Reminder date",
+    "reminderHint": "We will surface this reminder in your tracked list.",
+    "saveLocal": "Save",
+    "copySummary": "Copy summary",
+    "share": "Share",
+    "seenLabel": "Seen",
+    "lastSeenLabel": "Last seen",
+    "tracked": "Already tracked",
+    "trackedLocal": "Tracked locally",
+    "trackedRedox": "Tracked in Redox",
+    "alreadyTracked": "Already tracked",
+    "signalsTitle": "Signals",
+    "trackFailed": "Tracking failed, try again"
+  },
+  "tracked": {
+    "title": "Tracked properties",
+    "titleLocal": "Local tracking",
+    "titleRedox": "Redox",
+    "compareTitle": "Compare",
+    "compareHint": "Select 2-3 properties to compare key stats.",
+    "compareEmpty": "Select properties to compare.",
+    "compareField": "Field",
+    "fieldPrice": "Price",
+    "fieldRooms": "Rooms",
+    "fieldArea": "Area",
+    "fieldFloor": "Floor",
+    "remindersTitle": "Reminders",
+    "noReminders": "No reminders yet",
+    "reminder": "Reminder",
+    "visits": "Visits",
+    "empty": "No tracked properties",
+    "loginRequired": "Sign in to see Redox properties",
+    "error": "Server is unavailable"
+  },
+  "changes": {
+    "price": "Price",
+    "rooms": "Rooms",
+    "area": "Area",
+    "floor": "Floor"
+  },
+  "errors": {
+    "unauthorized": "Session expired, please sign in again",
+    "network": "Server error"
+  },
+  "units": {
+    "rooms": "rooms",
+    "sqm": "sqm",
+    "floor": "floor"
+  }
+}

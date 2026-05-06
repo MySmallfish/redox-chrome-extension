@@ -1,0 +1,132 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450">
+  <defs>
+    <style>
+      /* Main thick stroke for outer elements */
+      .brand-stroke {
+        fill: none;
+        stroke: #00AEEF;
+        stroke-width: 18;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      /* 50% thinner inner lines */
+      .thin-stroke {
+        fill: none;
+        stroke: #00AEEF;
+        stroke-width: 9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      /* Pen Body Outline: Butt cap for seamless join */
+      .pen-outline-butt {
+        fill: #FFFFFF;
+        stroke: #00AEEF;
+        stroke-width: 4;
+        stroke-linecap: butt; 
+        stroke-linejoin: round;
+      }
+      /* Solid Tip */
+      .pen-tip-solid {
+        fill: #00AEEF;
+        stroke: none;
+      }
+      /* Masking "Halo" */
+      .pen-gap-mask {
+        fill: #FFFFFF;
+        stroke: #FFFFFF;
+        stroke-width: 12;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .pen-detail {
+        fill: none;
+        stroke: #00AEEF;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .hebrew-text {
+        font-family: 'Arial', sans-serif;
+        font-weight: 700;
+        font-size: 55px;
+        fill: #00AEEF;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+
+  <path class="brand-stroke" d="
+    M 210,270 L 210,50 
+    L 80,50 Q 40,50 40,90 
+    L 40,230 Q 40,270 80,270 
+    L 150,270
+  "></path>
+  
+  <path class="brand-stroke" d="
+    M 210,50 
+    Q 320,50 320,120 
+    Q 320,190 210,190
+    M 245,190 
+    L 330,270
+  "></path>
+
+  <line class="thin-stroke" x1="80" y1="100" x2="140" y2="100"></line>
+  <line class="thin-stroke" x1="80" y1="150" x2="125" y2="150"></line>
+  <line class="thin-stroke" x1="80" y1="200" x2="100" y2="200"></line>
+
+  <path class="brand-stroke" stroke-width="7" d="M 60,235 Q 80,220 100,235 T 140,235"></path>
+
+
+  <g transform="translate(135, 175) rotate(45)">
+    
+    <path class="pen-gap-mask" d="M -11,45 L -11,-60 A 11,11 0 0 1 11,-60 L 11,45"></path>
+    <path class="pen-gap-mask" d="M -13,45 Q 0,80 0,80 Q 0,80 13,45 Z"></path>
+
+
+    <path class="pen-outline-butt" d="
+      M -11,45 
+      L -11,-60 
+      A 11,11 0 0 1 11,-60 
+      L 11,45
+    "></path>
+    
+    <path class="pen-tip-solid" d="
+      M -13,45 
+      Q 0,80 0,80 
+      Q 0,80 13,45 
+      Z
+    "></path>
+    
+    <rect x="-5" y="-50" width="10" height="30" rx="2" class="pen-detail"></rect>
+  </g>
+
+
+  <g transform="translate(360, 0)">
+    <path class="brand-stroke" d="
+      M 90,50 L 0,50 L 0,270 L 95,270
+      M 0,160 L 70,160
+    "></path>
+  </g>
+
+  <g transform="translate(500, 0)">
+    <path class="brand-stroke" d="
+      M 0,50 L 40,50 
+      Q 120,50 120,160 
+      Q 120,270 40,270 
+      L 0,270 Z
+    "></path>
+  </g>
+
+  <ellipse class="brand-stroke" cx="710" cy="160" rx="60" ry="110"></ellipse>
+
+  <g transform="translate(800, 0)">
+    <path class="brand-stroke" d="
+      M 0,50 L 120,270
+      M 120,50 L 0,270
+    "></path>
+  </g>
+
+
+  <text x="480" y="360" class="hebrew-text" direction="rtl">משרד תיווך דיגיטלי</text>
+
+</svg>

@@ -1,0 +1,487 @@
+{
+    "Groups": [
+        {
+            "Group": {
+                "Style": "background-position: calc(100% - 8px) center; background-size: 24px 32px;background-repeat: no-repeat;padding-right: 40px;border-color: #99a700;background-color: #eff1d8;",
+                "IsNetworkGroup": true,
+                "Id": 2,
+                "Name": "רשת ברוקר",
+                "Description": "ברוקר",
+                "Icon": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBAUEBAYFBQUGBgYHCQ4JCQgICRINDQoOFRIWFhUSFBQXGiEcFxgfGRQUHScdHyIjJSUlFhwpLCgkKyEkJST/2wBDAQYGBgkICREJCREkGBQYJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCT/wAARCAAgACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEGBQf/xAAkEAACAQMEAQUBAAAAAAAAAAABAgADBAUGERJRMRMUIULR4f/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwf/xAAdEQABBAIDAAAAAAAAAAAAAAADAAECBBExEiHw/9oADAMBAAIRAxEAPwDpMI1ALAE7Anz1KvNaXsrTGUqtm7vXZlVRy39XfoTMK9Mh4TnDUdqik4S1stE2yY9nv6jCuV5Eq2wp/si2ADEA7gHz3GtUDVmi5Wxy92jKU19OZaljMgtW7DvTCFQfPA9gTIhIANIJGJDbIVHqTVLZMe2tCyW32J+C/wDJOQhHs2iWSOQr5dC//9k=",
+                "IsPrivate": true
+            },
+            "JoinedAt": "2021-02-25T16:11:34.22Z"
+        }
+    ],
+    "DigitalCard": {
+        "Id": 6,
+        "TenantId": 1,
+        "UserId": 1,
+        "Name": "yair",
+        "About": "טקסט אודות שיווקיי וקליט <br>גם אם תרצו וגם אם לאו",
+        "Enabled": true,
+        "CreatedAt": "2017-09-05T00:00:00Z",
+        "Type": 1
+    },
+    "User": {
+        "Cities": [
+            "אריאל",
+            "פתח תקווה"
+        ],
+        "SocialLinks": [
+            {
+                "Name": "Site",
+                "Url": "http://www.liorabenari.com"
+            },
+            {
+                "Name": "Facebook",
+                "Url": "https://www.facebook.com/liora.benari/"
+            },
+            {
+                "Name": "Instagram",
+                "Url": "https://www.instagram.com/liorabenari/"
+            },
+            {
+                "Name": "Pinterest",
+                "Url": "https://www.pinterest.com/lb161267/"
+            },
+            {
+                "Name": "Youtube",
+                "Url": "https://www.youtube.com/channel/UCBZ2JRVwldZUntuDblbhZwA"
+            }
+        ],
+        "ManagementRegion": {
+            "Id": 1,
+            "Name": "תל אביב",
+            "ManagerId": 1,
+            "ManagerName": "יאיר כהן",
+            "UsersCount": 1,
+            "Address": "המסעדה 3",
+            "City": "תל אביב",
+            "Phone": "0525239030",
+            "RegNumber": "2343232",
+            "Attributes": [
+                {
+                    "Name": "SomeProperty",
+                    "Value": "SomeValue"
+                }
+            ]
+        },
+        "CountDealsTotal": 0,
+        "CountExelosiveTotal": 808,
+        "CountSignTotal": 3605,
+        "UserId": 1,
+        "FullName": "יאיר כהן",
+        "ImageUrl": "https://redox.blob.core.windows.net/images/tenant-00001/youtube-6d834788-0b7b-4ea0-8d65-a16b28782c06.png",
+        "Signature": "wphKwphJwplJwphKwppKwplJwptLwppKwptMwptLwp1NwptMwp1Owp1Nwp1Qwp1Owp5Qwp1Qwp5Rwp5Qwp5Twp5Rwp5Uwp5Twp5Wwp5Uwp5Xwp5Wwp5Zwp5Xwp5awp5ZwqBawp5awqBcwqBawqBdwqBcwqBfwqBdwqBgwqBfwqBhwqBgwqBiwqBhwqBjwqBiwqBkwqBjwqBlwqBkwp9mwqBlwp9nwp9mwp5owp9nwp5pwp5owp1qwp5pwpxrwp1qwpxswpxrwpttwpxswppuwpttwplvwppuwphwwplvwpdxwphwwpZzwpdxwpVzwpZzwpR1wpVzwpN2wpR1wpJ2wpN2wpB4wpJ2wpB5wpB4wo96wpB5wo16wo96wox7wo16wop8wox7wol8wop8woh9wol8wod9woh9woV+wod9woR/woV+woN/woR/woHCgMKDf3/CgMKBwoB8woF/woB6woJ8woF5woJ6woJ4woJ5woJ3woJ4woJ2woR3woJ1woR2woRzwoR1woRxwoRzwoRwwoRxwoRuwoRwwoRtwoRuwoRswoRtwoRqwoRswoRowoVqwoRlwoVowoVkwoVlwoVjwoVkwoViwoVjwoVgwoViwoVfwoVgwoVewoVfwoVdwoVewoVcwoVdwoVawoVcwoVZwoVawoVXwoVZwoVWwoVXwoVUwoVWwoVTwoVUwoVRwoVTwoVQwoVRwoVPwoRQwoVOwoNPwoRNwoJOwoNMwoFNwoJMwoBMwoFMf0zCgEx+TH9MfUx+THxMfUx7THxMekx7THlMekx4THlMd0x4THVMd0xzTHVNcExzTW9NcE1uTW9ObU1uT2tObU9qT2tQaU9qUGdQaVFlUGdSZVFlU2RSZVNiU2RUYVNiVV9UYVZeVV9XXFZeWFtXXFlaWFtaWVlaXFZaWV1UXFZfU11UYVFfU2JQYVFjT2JQZU1jT2dLZU1oSWdLakhoSWtHakhsRmtHbkVsRnFCbkV1QXFCdkB1QXc/dkB5Pnc/fDx5Pn86fDzCgTl/OsKEOMKBOcKHNcKEOMKJNMKHNcKKNMKJNMKMMsKKNMKPMMKMMsKQMMKPMMKSL8KQMMKVLsKSL8KXLMKVLsKYK8KXLMKaK8KYK8KdKsKaK8KgKcKdKsKiKMKgKcKkKMKiKMKnJsKkKMKqJcKnJsKrJcKqJcKtI8KrJcKvI8KtI8KxIsKvI8K1IcKxIsK2IMK1IcK3IMK2IMK6IMK3IMK8HsK6IMK9HsK8HsK/HcK9HsOBHcK/HcODHcOBHcOEHcODHcOGHcOEHcOHHcOGHcOIHcOHHcOJHcOIHcOKHcOJHcOLG8OKHcOMG8OLG8ONG8OMG8OPG8ONG8ORG8OPG8OSG8ORG8OUGsOSG8OVGsOUGsOXGsOVGsOYG8OXGsOYHMOYG8OYHcOYHMOYHsOYHcOYH8OYHsOYIMOYH8OYIcOYIMOYIsOYIcOYI8OYIsOYJMOYI8OYJcOYJMOYJsOYJcOYJ8OYJsOYKMOYJ8OYKcOYKMOYKsOYKcOYK8OYKsOYLMOYK8OYLsOYLMOYL8OYLsOYMcOYL8OYMsOYMcOXNMOYMsOXNcOXNMOXN8OXNcOWOMOXN8OWOcOWOMOWOsOWOcOWO8OWOsOVPMOWO8OVPcOVPMOVPsOVPcOVP8OVPsOUQcOVP8OUQsOUQcOUQ8OUQsOURMOUQ8OSTsOURMORUMOSTsORUcORUMORU8ORUcOPU8ORU8OPVMOPU8OPVsOPVMOOWMOPVsOOWcOOWMOOWsOOWcOOW8OOWsOMXMOOW8OMXcOMXMOLX8OMXcOKYcOLX8OKYsOKYcOJZMOKYsOIZcOJZMOHaMOIZcOHacOHaMOGasOHacOFa8OGasOFbMOFa8OFbcOFbMOFbsOFbcOFbMOFbsOEbMOFbMODbMOEbMOBbMODbMOBbcOBbMOAbsOBbcK+bsOAbsK+cMK+bsK+ccK+cMK+csK+ccK+c8K+csK+dMK+c8K+dcK+dMK+dsK+dcK+d8K+dsK+eMK+d8K+ecK+eMK+esK+ecK+e8K+esK+fMK+e8K+fcK+fMK+fsK+fcK9f8K+fg==",
+        "LastLogin": "2015-10-06T21:46:03.967Z",
+        "LastSync": "2015-10-06T21:46:03.967Z",
+        "CreatedAt": "2015-10-06T21:46:03.967Z",
+        "RegionId": 1,
+        "RegionManagerId": 1,
+        "Enabled": true,
+        "IsApproved": true,
+        "LogoName": "REdox - החתמה דיגיטלית למתווכים",
+        "Email": "mysmallfish@gmail.com",
+        "Address": "דרך בגין מנחם 67/46",
+        "City": "פתחיה",
+        "Phone": "0525239030",
+        "IdNumber": "040342834",
+        "CertificateNumber": "002302",
+        "TenantId": 1,
+        "DocumentsCount": 3730,
+        "DocumentsCountUpdated": "2026-01-29T23:17:35.45Z",
+        "Roles": [
+            "Administrator",
+            "Manager",
+            "TenantAdmin"
+        ],
+        "RequiresSecurityCode": true,
+        "IsTestUser": true
+    },
+    "NetworkCode": null,
+    "Tenant": {
+        "Id": 1,
+        "SocialLinks": [
+            {
+                "Name": "Facebook",
+                "Url": "http://facebook.com/redox.il"
+            },
+            {
+                "Name": "Site",
+                "Url": "http://redox.co.il"
+            },
+            {
+                "Name": "Youtube",
+                "Url": "https://www.youtube.com/watch?v=TMuno5RZNeE"
+            },
+            {
+                "Name": "Instagram",
+                "Url": "http://get.redox.co.il"
+            }
+        ],
+        "Credits": 1,
+        "Enabled": true,
+        "Name": "REdox - החתמה דיגיטלית למתווכים",
+        "ImageUrl": "https://redox.blob.core.windows.net/images/tenant-00001/samantha-gades-BlIhVfXbi9s-unsplash%20-%20Copy-258961c0-9f2e-4910-9cf9-3a13c378c82e.jpg",
+        "Host": "portal.redox.co.il",
+        "Address": "גליצנשטיין 3",
+        "Phone": "0507116850",
+        "City": "פתח תקווה",
+        "AdminEmail": "yair@redox.co.il",
+        "Admin": {
+            "SocialLinks": [
+                {
+                    "Name": "Site",
+                    "Url": "http://www.liorabenari.com"
+                },
+                {
+                    "Name": "Facebook",
+                    "Url": "https://www.facebook.com/liora.benari/"
+                },
+                {
+                    "Name": "Instagram",
+                    "Url": "https://www.instagram.com/liorabenari/"
+                },
+                {
+                    "Name": "Pinterest",
+                    "Url": "https://www.pinterest.com/lb161267/"
+                },
+                {
+                    "Name": "Youtube",
+                    "Url": "https://www.youtube.com/channel/UCBZ2JRVwldZUntuDblbhZwA"
+                }
+            ],
+            "ManagementRegion": null,
+            "CountDealsTotal": 0,
+            "CountExelosiveTotal": 0,
+            "CountSignTotal": 0,
+            "UserId": 1,
+            "FullName": "יאיר כהן",
+            "ImageUrl": "https://redox.blob.core.windows.net/images/tenant-00001/youtube-6d834788-0b7b-4ea0-8d65-a16b28782c06.png",
+            "Signature": "wphKwphJwplJwphKwppKwplJwptLwppKwptMwptLwp1NwptMwp1Owp1Nwp1Qwp1Owp5Qwp1Qwp5Rwp5Qwp5Twp5Rwp5Uwp5Twp5Wwp5Uwp5Xwp5Wwp5Zwp5Xwp5awp5ZwqBawp5awqBcwqBawqBdwqBcwqBfwqBdwqBgwqBfwqBhwqBgwqBiwqBhwqBjwqBiwqBkwqBjwqBlwqBkwp9mwqBlwp9nwp9mwp5owp9nwp5pwp5owp1qwp5pwpxrwp1qwpxswpxrwpttwpxswppuwpttwplvwppuwphwwplvwpdxwphwwpZzwpdxwpVzwpZzwpR1wpVzwpN2wpR1wpJ2wpN2wpB4wpJ2wpB5wpB4wo96wpB5wo16wo96wox7wo16wop8wox7wol8wop8woh9wol8wod9woh9woV+wod9woR/woV+woN/woR/woHCgMKDf3/CgMKBwoB8woF/woB6woJ8woF5woJ6woJ4woJ5woJ3woJ4woJ2woR3woJ1woR2woRzwoR1woRxwoRzwoRwwoRxwoRuwoRwwoRtwoRuwoRswoRtwoRqwoRswoRowoVqwoRlwoVowoVkwoVlwoVjwoVkwoViwoVjwoVgwoViwoVfwoVgwoVewoVfwoVdwoVewoVcwoVdwoVawoVcwoVZwoVawoVXwoVZwoVWwoVXwoVUwoVWwoVTwoVUwoVRwoVTwoVQwoVRwoVPwoRQwoVOwoNPwoRNwoJOwoNMwoFNwoJMwoBMwoFMf0zCgEx+TH9MfUx+THxMfUx7THxMekx7THlMekx4THlMd0x4THVMd0xzTHVNcExzTW9NcE1uTW9ObU1uT2tObU9qT2tQaU9qUGdQaVFlUGdSZVFlU2RSZVNiU2RUYVNiVV9UYVZeVV9XXFZeWFtXXFlaWFtaWVlaXFZaWV1UXFZfU11UYVFfU2JQYVFjT2JQZU1jT2dLZU1oSWdLakhoSWtHakhsRmtHbkVsRnFCbkV1QXFCdkB1QXc/dkB5Pnc/fDx5Pn86fDzCgTl/OsKEOMKBOcKHNcKEOMKJNMKHNcKKNMKJNMKMMsKKNMKPMMKMMsKQMMKPMMKSL8KQMMKVLsKSL8KXLMKVLsKYK8KXLMKaK8KYK8KdKsKaK8KgKcKdKsKiKMKgKcKkKMKiKMKnJsKkKMKqJcKnJsKrJcKqJcKtI8KrJcKvI8KtI8KxIsKvI8K1IcKxIsK2IMK1IcK3IMK2IMK6IMK3IMK8HsK6IMK9HsK8HsK/HcK9HsOBHcK/HcODHcOBHcOEHcODHcOGHcOEHcOHHcOGHcOIHcOHHcOJHcOIHcOKHcOJHcOLG8OKHcOMG8OLG8ONG8OMG8OPG8ONG8ORG8OPG8OSG8ORG8OUGsOSG8OVGsOUGsOXGsOVGsOYG8OXGsOYHMOYG8OYHcOYHMOYHsOYHcOYH8OYHsOYIMOYH8OYIcOYIMOYIsOYIcOYI8OYIsOYJMOYI8OYJcOYJMOYJsOYJcOYJ8OYJsOYKMOYJ8OYKcOYKMOYKsOYKcOYK8OYKsOYLMOYK8OYLsOYLMOYL8OYLsOYMcOYL8OYMsOYMcOXNMOYMsOXNcOXNMOXN8OXNcOWOMOXN8OWOcOWOMOWOsOWOcOWO8OWOsOVPMOWO8OVPcOVPMOVPsOVPcOVP8OVPsOUQcOVP8OUQsOUQcOUQ8OUQsOURMOUQ8OSTsOURMORUMOSTsORUcORUMORU8ORUcOPU8ORU8OPVMOPU8OPVsOPVMOOWMOPVsOOWcOOWMOOWsOOWcOOW8OOWsOMXMOOW8OMXcOMXMOLX8OMXcOKYcOLX8OKYsOKYcOJZMOKYsOIZcOJZMOHaMOIZcOHacOHaMOGasOHacOFa8OGasOFbMOFa8OFbcOFbMOFbsOFbcOFbMOFbsOEbMOFbMODbMOEbMOBbMODbMOBbcOBbMOAbsOBbcK+bsOAbsK+cMK+bsK+ccK+cMK+csK+ccK+c8K+csK+dMK+c8K+dcK+dMK+dsK+dcK+d8K+dsK+eMK+d8K+ecK+eMK+esK+ecK+e8K+esK+fMK+e8K+fcK+fMK+fsK+fcK9f8K+fg==",
+            "LastLogin": "2015-10-06T21:46:03.967Z",
+            "LastSync": "2015-10-06T21:46:03.967Z",
+            "CreatedAt": "2015-10-06T21:46:03.967Z",
+            "RegionId": 1,
+            "RegionManagerId": 1,
+            "Enabled": true,
+            "IsApproved": true,
+            "LogoName": "REdox - החתמה דיגיטלית למתווכים",
+            "Email": "mysmallfish@gmail.com",
+            "Address": "דרך בגין מנחם 67/46",
+            "City": "פתחיה",
+            "Phone": "0525239030",
+            "IdNumber": "040342834",
+            "CertificateNumber": "002302",
+            "TenantId": 1,
+            "DocumentsCount": 3730,
+            "DocumentsCountUpdated": "2026-01-29T23:17:35.45Z",
+            "Roles": [
+                "Administrator",
+                " Manager",
+                " TenantAdmin"
+            ],
+            "RequiresSecurityCode": true,
+            "IsTestUser": true
+        },
+        "ApiKey": "ezNDQURFMDNBLURGMTUtNDMxOC04MkFELTU1NjdGMkQ0MTI2Mn0=",
+        "LastModified": "2019-01-01T00:00:00Z"
+    },
+    "Configuration": [
+        {
+            "Name": "Enabled",
+            "Group": "Presentation",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Sharing",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Portal",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Training",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Upgrade",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "SupportRemoteSignature",
+            "Group": "Document",
+            "Type": "String",
+            "Value": "{\"DealTypes.All\":true}"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Reports",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "DefaultPercentsRate",
+            "Group": "Document.DisplayProperty.DealTypes.Coop",
+            "Type": "Float",
+            "Value": "0.25"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "MultilanguageTemplates",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Available",
+            "Group": "MultilanguageTemplates",
+            "Type": "String",
+            "Value": "[{\"Name\":\"אנגלית\",\"Code\":\"en-US\"},{\"Name\":\"Francies\",\"Code\":\"fr-FR\"},{\"Name\":\"English (US)\",\"Code\":\"en-US\"},{\"Name\":\"הצעת מחיר (עברית)\",\"Code\":\"po-PO\"}, {\"Name\":\"הסכם קצר\",\"Code\":\"mo-MO\"}]"
+        },
+        {
+            "Name": "Fields",
+            "Group": "DealTypes.Coop",
+            "Type": "String",
+            "Value": "[{\"Name\":\"Details\",\"Items\":[{\"Name\":\"CoopType\",\"Type\":\"comboBox\",\"Header\":\"סוג השת\\\"פ - אופן חלוקת העמלה\",\"DataSource\":[{\"Value\":\"regular\",\"Text\":\"נציג הקונה משלם לנציג המוכר את העמלה שצויינה.\"},{\"Value\":\"split\",\"Text\":\"ללא חלוקה - כל צד גובה מהלקוח שלו\"},{\"Value\":\"join\",\"Text\":\"קופה משותפת (חלוקה שווה של סכום העמלות)\"},{\"Value\":\"other\",\"Text\":\"סיכום אחר (ציין במיקום המיועד)\"}],\"Default\":\"regular\",\"Hint\":\" \"},{\"Name\":\"OtherCoop\",\"Type\":\"multiline\",\"Header\":\"סיכום אחר - פרט\",\"Hint\":\" \"}]}]"
+        },
+        {
+            "Name": "MoreDetailsMetadata",
+            "Group": "Property.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"PropertyGroup.Building\",\"Items\":[{\"Name\":\"BuildingFloors\",\"Type\":\"number\",\"Header\":\"Property.BuildingFloors\",\"Hint\":\"EnterPropertyBuildingFloors\"},{\"Name\":\"BuildingAge\",\"Type\":\"number\",\"Header\":\"Property.BuildingAge\",\"Hint\":\"EnterPropertyBuildingAge\"},{\"Name\":\"HouseFee\",\"Type\":\"number\",\"Header\":\"Property.HouseFee\",\"Hint\":\"EnterPropertyHouseFee\"},{\"Name\":\"CityTax\",\"Type\":\"number\",\"Header\":\"Property.CityTax\",\"Hint\":\"EnterPropertyCityTax\"},{\"Name\":\"Elevators\",\"Type\":\"number\",\"Header\":\"Property.Elevators\",\"Hint\":\"EnterPropertyElevators\",\"Layout\":\"Full\"},{\"Name\":\"Sprinklers\",\"Type\":\"boolean\",\"Header\":\"Property.Sprinklers\",\"Hint\":\"EnterPropertySprinklers\"},{\"Name\":\"TrucksAccess\",\"Type\":\"boolean\",\"Header\":\"Property.TrucksAccess\",\"Hint\":\"EnterPropertyTrucksAccess\"}]},{\"Name\":\"PropertyGroup.Misc\",\"Items\":[{\"Name\":\"Comments\",\"Type\":\"multiline\",\"Hint\":\"EnterPropertyComments\",\"Layout\":\"Full\"},{\"Name\":\"PlotArea\",\"Type\":\"number\",\"Hint\":\"EnterPropertyPlotArea\"},{\"Name\":\"HomeArea\",\"Type\":\"number\",\"Hint\":\"EnterPropertyHomeArea\"},{\"Name\":\"WarehouseArea\",\"Type\":\"number\",\"Header\":\"Property.WarehouseArea\",\"Hint\":\"EnterPropertyWarehouseArea\"},{\"Name\":\"BalconyArea\",\"Type\":\"number\",\"Header\":\"Property.BalconyArea\",\"Hint\":\"EnterPropertyBalconyArea\"},{\"Name\":\"GardenArea\",\"Type\":\"number\",\"Header\":\"Property.GardenArea\",\"Hint\":\"EnterPropertyGardenArea\"},{\"Name\":\"AdditionalBuildingRights\",\"Header\":\"Property.AdditionalBuildingRights\",\"Hint\":\"EnterPropertyAdditionalBuildingRights\"},{\"Name\":\"AreaBy\",\"Type\":\"comboBox\",\"Header\":\"Property.AreaBy\",\"DataSource\":[{\"Id\":0,\"Name\":\"AreaBy.City\"},{\"Id\":1,\"Name\":\"AreaBy.Tabo\"},{\"Id\":2,\"Name\":\"AreaBy.Other\"}],\"DisplayMember\":\"Name\",\"KeyMember\":\"Id\",\"UseComplexKey\":true},{\"Name\":\"AreaByOther\",\"Header\":\"Property.AreaByOther\",\"Hint\":\"EnterPropertyAreaByOther\"},{\"Name\":\"Directions\",\"Type\":\"choose\",\"Header\":\"Property.Directions\",\"DataSource\":[{\"Name\":\"Direction.North\",\"Value\":\"North\"},{\"Name\":\"Direction.South\",\"Value\":\"South\"},{\"Name\":\"Direction.East\",\"Value\":\"East\"},{\"Name\":\"Direction.West\",\"Value\":\"West\"}],\"DisplayMember\":\"Name\"},{\"Name\":\"FrontDirection\",\"Type\":\"choose\",\"Header\":\"Property.FrontDirection\",\"DataSource\":[{\"Name\":\"FrontDirection.Front\",\"Value\":\"Front\"},{\"Name\":\"FrontDirection.Back\",\"Value\":\"Back\"},{\"Name\":\"FrontDirection.Side\",\"Value\":\"Side\"},{\"Name\":\"FrontDirection.Corner\",\"Value\":\"Corner\"}],\"DisplayMember\":\"Name\"},{\"Name\":\"Ownership\",\"Type\":\"comboBox\",\"Header\":\"Property.Ownership\",\"DataSource\":[{\"Id\":0,\"Name\":\"Ownership.Private\"},{\"Id\":1,\"Name\":\"Ownership.Rami\"},{\"Id\":2,\"Name\":\"Ownership.Kkl\"},{\"Id\":3,\"Name\":\"Ownership.Other\"}],\"DisplayMember\":\"Name\",\"KeyMember\":\"Id\",\"UseComplexKey\":true},{\"Name\":\"OwnershipComment\",\"Header\":\"Property.OwnershipComment\",\"Hint\":\"EnterPropertyOwnershipComment\"},{\"Name\":\"ParkingSpaces\",\"Type\":\"number\",\"Header\":\"Property.ParkingSpaces\",\"Hint\":\"EnterPropertyParkingSpaces\"},{\"Name\":\"ParkingPosition\",\"Type\":\"comboBox\",\"Header\":\"Property.ParkingPosition\",\"DataSource\":[{\"Id\":0,\"Name\":\"ParkingPosition.None\"},{\"Id\":1,\"Name\":\"ParkingPosition.StreetLevel\"},{\"Id\":2,\"Name\":\"ParkingPosition.Underground\"},{\"Id\":3,\"Name\":\"ParkingPosition.Street\",\"UseComplexKey\":true}],\"DisplayMember\":\"Name\",\"KeyMember\":\"Id\"},{\"Name\":\"EnvironmentDetails\",\"Type\":\"multiline\",\"Header\":\"Property.EnvironmentDetails\",\"Hint\":\"EnterPropertyEnvironmentDetails\"},{\"Name\":\"KnownPlanningConstraints\",\"Type\":\"multiline\",\"Header\":\"Property.KnownPlanningConstraints\",\"Hint\":\"EnterPropertyKnownPlanningConstraints\"}]},{\"Name\":\"PropertyGroup.Inside\",\"Items\":[{\"Name\":\"PhysicalState\",\"Type\":\"comboBox\",\"Layout\":\"Full\",\"Header\":\"Property.PhysicalState\",\"DataSource\":[{\"Id\":0,\"Name\":\"PhysicalState.Normal\"},{\"Id\":1,\"Name\":\"PhysicalState.Renovated\"},{\"Id\":2,\"Name\":\"PhysicalState.RequiresRenovation\"}],\"DisplayMember\":\"Name\",\"KeyMember\":\"Id\",\"UseComplexKey\":true},{\"Name\":\"WaterLeakComment\",\"Type\":\"multiline\",\"Header\":\"Property.WaterLeakComment\",\"Hint\":\"EnterPropertyWaterLeakComment\"},{\"Name\":\"BuildingCodeViolationComment\",\"Type\":\"multiline\",\"Header\":\"Property.BuildingCodeViolationComment\",\"Hint\":\"EnterPropertyBuildingCodeViolationComment\"},{\"Name\":\"InfrastructureMalfunctionsComments\",\"Type\":\"multiline\",\"Header\":\"Property.InfrastructureMalfunctionsComments\",\"Hint\":\"EnterPropertyInfrastructureMalfunctions\"},{\"Name\":\"JudicialStatus\",\"Type\":\"multiline\",\"Header\":\"Property.JudicialStatus\",\"Hint\":\"EnterPropertyJudicialStatus\"},{\"Name\":\"ProfessionalAssessment\",\"Type\":\"multiline\",\"Header\":\"Property.ProfessionalAssessment\",\"Hint\":\"EnterPropertyProfessionalAssessment\"},{\"Name\":\"MarkedAsDangerousComment\",\"Type\":\"multiline\",\"Header\":\"Property.MarkedAsDangerousComment\",\"Hint\":\"EnterPropertyMarkedAsDangerousComment\"},{\"Name\":\"AirConditioner\",\"Type\":\"comboBox\",\"Header\":\"Property.AirConditioner\",\"Layout\":\"Full\",\"DataSource\":[{\"Id\":0,\"Name\":\"AirConditioner.None\"},{\"Id\":1,\"Name\":\"AirConditioner.Top\"},{\"Id\":2,\"Name\":\"AirConditioner.Central\"},{\"Id\":3,\"Name\":\"AirConditioner.Inverter\"},{\"Id\":4,\"Name\":\"AirConditioner.MultiInverter\"}],\"DisplayMember\":\"Name\",\"KeyMember\":\"Id\",\"UseComplexKey\":true},{\"Name\":\"Toilets\",\"Type\":\"number\",\"Header\":\"Property.Toilets\",\"Hint\":\"EnterPropertyToilets\"},{\"Name\":\"Showers\",\"Type\":\"number\",\"Header\":\"Property.Showers\",\"Hint\":\"EnterPropertyShowers\"},{\"Name\":\"Balconies\",\"Type\":\"number\",\"Header\":\"Property.Balconies\",\"Hint\":\"EnterPropertyBalconies\"},{\"Name\":\"Partners\",\"Type\":\"number\",\"Header\":\"Property.Partners\",\"Hint\":\"EnterPropertyPartners\"},{\"Name\":\"EntryDate\",\"Type\":\"date\",\"Header\":\"Property.EntryDate\",\"Hint\":\"EnterPropertyEntryDate\"},{\"Name\":\"Evacuation\",\"Header\":\"Property.Evacuation\",\"Hint\":\"EnterPropertyEvacuation\"},{\"Name\":\"Furnished\",\"Type\":\"boolean\",\"Header\":\"Property.Furnished\",\"Hint\":\"EnterPropertyFurnished\"},{\"Name\":\"SolarHeat\",\"Type\":\"boolean\",\"Header\":\"Property.SolarHeat\",\"Hint\":\"EnterPropertySolarHeat\"},{\"Name\":\"Accessible\",\"Type\":\"boolean\",\"Header\":\"Property.Accessible\",\"Hint\":\"EnterPropertyAccessible\"},{\"Name\":\"Animals\",\"Type\":\"boolean\",\"Header\":\"Property.Animals\",\"Hint\":\"EnterPropertyAnimals\"},{\"Name\":\"Basement\",\"Type\":\"boolean\",\"Header\":\"Property.Basement\",\"Hint\":\"EnterPropertyBasement\"}]},{\"Name\":\"Automation\",\"Items\":[{\"Name\":\"ReferenceId\",\"Header\":\"Property.ReferenceId\",\"Hint\":\"EnterPropertyReferenceId\"},{\"Type\":\"placeholder\"},{\"Name\":\"LastModified\",\"Type\":\"label\",\"Format\":\"dd/MM/yyyy HH:mm\",\"ReadOnly\":true,\"Header\":\"Property.LastModified\",\"Hint\":\"EnterPropertyLastModified\"},{\"Name\":\"CreatedAt\",\"Type\":\"label\",\"Format\":\"dd/MM/yyyy HH:mm\",\"ReadOnly\":true,\"Header\":\"Property.CreatedAt\",\"Hint\":\"EnterPropertyCreatedAt\"}]}]"
+        },
+        {
+            "Name": "FieldsMetadata",
+            "Group": "Property.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"PropertyGroup.Details\",\"Items\":[{\"Name\":\"Type\",\"Type\":\"autoComplete\",\"Header\":\"PropertyType\",\"Hint\":\"SelectPropertyType\",\"DataSource\":\"PropertyTypes\",\"DisplayMember\":\"Name\",\"Required\":true},{\"Type\":\"placeholder\"},{\"Name\":\"City\",\"Type\":\"List.City\",\"Header\":\"Property.City\",\"Hint\":\"EnterPropertyCity\",\"Required\":true},{\"Name\":\"Address\",\"Type\":\"List.Street\",\"Header\":\"Property.Address\",\"Hint\":\"EnterPropertyAddress\",\"Required\":true,\"Parent\":\"City\"},{\"Name\":\"HomeNumber\",\"Hint\":\"EnterPropertyHomeNumber\",\"Header\":\"Property.HomeNumber\",\"Required\":true},{\"Name\":\"AppartmentNumber\",\"Hint\":\"EnterPropertyAppartmentNumber\"},{\"Name\":\"PlotNumber\",\"Type\":\"number\",\"Header\":\"Property.PlotNumber\",\"Hint\":\"EnterPropertyPlotNumber\"},{\"Name\":\"PartitionNumber\",\"Type\":\"number\",\"Header\":\"Property.PartitionNumber\",\"Hint\":\"EnterPropertyPartitionNumber\"},{\"Name\":\"SubPartitionNumber\",\"Type\":\"number\",\"Header\":\"Property.SubPartitionNumber\",\"Hint\":\"EnterPropertySubPartitionNumber\"},{\"Name\":\"UsePartitionNumber\",\"Type\":\"boolean\",\"Header\":\"UsePartitionNumber\",\"Layout\":\"Full\"},{\"Name\":\"Entrance\",\"Header\":\"Property.Entrance\",\"Hint\":\"EnterPropertyEntrance\"},{\"Name\":\"District\",\"Header\":\"Property.District\",\"Hint\":\"EnterPropertyDistrict\"},{\"Name\":\"ZipCode\",\"Hint\":\"EnterPropertyZipCode\"},{\"Name\":\"OriginalRooms\",\"Type\":\"number\",\"MaxLength\":10,\"Header\":\"Property.OriginalRooms\",\"Hint\":\"EnterPropertyOriginalRooms\"},{\"Name\":\"Rooms\",\"Type\":\"number\",\"MaxLength\":10,\"Header\":\"Property.Rooms\",\"Hint\":\"EnterPropertyRooms\"},{\"Name\":\"Floor\",\"Header\":\"Property.Floor\",\"Hint\":\"EnterPropertyFloor\"},{\"Name\":\"BuildingFloors\",\"Type\":\"number\",\"Header\":\"Property.BuildingFloors\",\"Hint\":\"EnterPropertyBuildingFloors\"}]},{\"Name\":\"PropertyGroup.Pricing\",\"Items\":[{\"Name\":\"RequestedPrice\",\"Type\":\"price\",\"Required\":true,\"Header\":\"Property.RequestedPrice\",\"Hint\":\"EnterPropertyRequestedPrice\"},{\"Name\":\"NegotiationPrice\",\"Type\":\"price\",\"Header\":\"Property.NegotiationPrice\",\"Hint\":\"EnterPropertyNegotiationPrice\"},{\"Name\":\"RentalRequestedPrice\",\"Type\":\"price\",\"Header\":\"Property.RentalRequestedPrice\",\"Hint\":\"EnterPropertyRentalRequestedPrice\"},{\"Type\":\"placeholder\"},{\"Name\":\"PercentsRate\",\"Type\":\"number\",\"Header\":\"Property.PercentsRate\",\"Hint\":\"PercentsRate.Hint\"},{\"Name\":\"AmountRate\",\"Type\":\"number\",\"Header\":\"Property.AmountRate\",\"Hint\":\"AmountRate.Hint\"}]}]"
+        },
+        {
+            "Name": "CustomerMetadata",
+            "Group": "Property.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"PropertyGroup.Seller\",\"Coolapsible\":true,\"Collaped\":true,\"Items\":[{\"Name\":\"Name\",\"Header\":\"Seller.Name\",\"Hint\":\"EnterCustomerName\",\"Required\":true,\"MaxLength\":100},{\"Name\":\"Phone\",\"Header\":\"Customer.Phone\",\"Hint\":\"EnterCustomerPhone\",\"Type\":\"tel\",\"MaxLength\":15,\"MinLength\":9,\"Pattern\":\"[a-z0-9-_+]+\",\"Required\":true},{\"Name\":\"IdNumber\",\"Header\":\"Customer.IdNumber\",\"Type\":\"idNumber\",\"Hint\":\"EnterIdNumber\",\"Required\":true},{\"Name\":\"Email\",\"Header\":\"Customer.Email\",\"Hint\":\"CustomerEmailHint\",\"Type\":\"email\",\"MaxLength\":200,\"Required\":false,\"DataSource\":\"CommonEmails\"}]}]"
+        },
+        {
+            "Name": "FieldsMetadata",
+            "Group": "Customer.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"\",\"Items\":[{\"Name\":\"Name\",\"Header\":\"Customer.Name\",\"Hint\":\"EnterCustomerName\",\"Required\":true,\"MaxLength\":100},{\"Name\":\"CustomerType\",\"Header\":\"Customer.CustomerType\",\"DisplayMember\":\"Text\",\"UseComplexKey\":true,\"Hint\":\" \",\"Type\":\"comboBox\",\"DataSource\":\"CustomerTypes\",\"KeyMember\":\"Id\"},{\"Name\":\"IdNumber\",\"Header\":\"Customer.IdNumber\",\"Type\":\"idNumber\",\"Hint\":\"EnterIdNumber\",\"Required\":true}]},{\"Name\":\"ContactDetails\",\"Items\":[{\"Name\":\"Phone\",\"Header\":\"Customer.Phone\",\"Hint\":\"EnterCustomerPhone\",\"Type\":\"tel\",\"MaxLength\":15,\"MinLength\":9,\"Pattern\":\"[a-z0-9-_+]+\",\"Required\":true},{\"Name\":\"AdditionalPhone\",\"Header\":\"Customer.AddionalPhone\",\"Hint\":\"EnterCustomerAddionalPhone\",\"Type\":\"tel\",\"MaxLength\":15,\"MinLength\":9,\"Pattern\":\"[a-z0-9-_+]+\"},{\"Name\":\"Email\",\"Header\":\"Customer.Email\",\"Hint\":\"CustomerEmailHint\",\"Type\":\"email\",\"MaxLength\":200,\"DataSource\":\"CommonEmails\"}]},{\"Name\":\"AddressDetails\",\"Items\":[{\"Name\":\"City\",\"Header\":\"Customer.City\",\"Type\":\"List.City\",\"Hint\":\"EnterCustomerCity\",\"MaxLength\":200,\"Required\":true},{\"Name\":\"Address\",\"Header\":\"Customer.Address\",\"Type\":\"List.Street\",\"Hint\":\"EnterCustomerAddress\",\"MaxLength\":200,\"Parent\":\"City\"},{\"Name\":\"HomeNumber\",\"Header\":\"Customer.HomeNumber\",\"Hint\":\"EnterCustomerHomeNumber\",\"MaxLength\":20},{\"Name\":\"ZipCode\",\"Hint\":\"EnterCustomerZipCode\",\"MaxLength\":20}]},{\"Name\":\"CompanyDetails\",\"Items\":[{\"Name\":\"CompanyName\",\"Header\":\"Customer.CompanyName\",\"Hint\":\"EnterCustomerCompanyName\",\"MaxLength\":200},{\"Name\":\"PrivateCompanyId\",\"Header\":\"Customer.PrivateCompanyId\",\"Type\":\"idNumber\",\"Hint\":\"CustomerPrivateCompanyIdHint\"}]},{\"Name\":\"Comments\",\"Items\":[{\"Name\":\"Comments\",\"Type\":\"multiline\",\"MaxLength\":4000,\"Hint\":\"EnterCustomerComments\",\"Layout\":\"Full\"}]}]"
+        },
+        {
+            "Name": "MoreInfoMetadata",
+            "Group": "Customer.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"AgentDetails\",\"Items\":[{\"Name\":\"CertificateNumber\",\"Header\":\"Customer.CertificateNumber\",\"Hint\":\"EnterCustomerCertificateNumber\",\"MaxLength\":200}]}]"
+        },
+        {
+            "Name": "Available",
+            "Group": "Reports",
+            "Type": "String",
+            "Value": "[{\"Id\":1,\"ReportType\":\"Agreements\",\"Group\":\"Property\",\"OutputType\":\"Excel\",\"Name\":\"החתמות קונים\",\"Description\":\"דו\\\"ח אקסל הכולל סיכום של החתמות על הסכמי שירותי תיווך עם פרטי הקונים - לנכס הנבחר\"},{\"Id\":2,\"ReportType\":\"Properties\",\"Group\":\"Property\",\"OutputType\":\"Excel\",\"Name\":\"יצוא כלל הנכסים\",\"Description\":\"יצוא של כלל רשומות הנכסים לקובץ\"},{\"Id\":3,\"ReportType\":\"Agreements\",\"Group\":\"Agreements\",\"OutputType\":\"Excel\",\"Name\":\"החתמות\",\"Description\":\"דו\\\"ח אקסל הכולל סיכום של כלל ההחתמות על הסכמים לפי הסינון הנבחר\"},{\"Id\":4,\"ReportType\":\"ExclusiveApproachingOverdue\",\"Group\":\"Agreements\",\"OutputType\":\"Excel\",\"Name\":\"בלעדיות\",\"Description\":\"דו\\\"ח אקסל הכולל סיכום של כלל ההחתמות על הסכמים לפי הסינון הנבחר - הסכמי בלעדיות בלבד\"},{\"Id\":5,\"ReportType\":\"Agreements\",\"Group\":\"Customer\",\"OutputType\":\"Excel\",\"Name\":\"החתמות\",\"Description\":\"דו\\\"ח אקסל הכולל סיכום של כלל ההחתמות על הסכמי שירותי תיווך - ללקוח הנבחר\"},{\"Id\":6,\"ReportType\":\"Customers\",\"Group\":\"Customer\",\"OutputType\":\"Excel\",\"Name\":\"יצוא כלל הלקוחות\",\"Description\":\"דו\\\"ח אקסל הכולל סיכום של כלל ההחתמות על הסכמי שירותי תיווך\"},{\"Id\":7,\"ReportType\":\"Deals\",\"Group\":\"Deals\",\"OutputType\":\"Excel\",\"Name\":\"דו\\\"ח עסקאות\",\"Description\":\"דו\\\"ח אקסל הכולל סיכום של כלל העסקאות\"},{\"Id\":8,\"ReportType\":\"ExportAll\",\"Group\":\"Profile\",\"OutputType\":\"Zip\",\"Name\":\"גיבוי נתונים מלא\",\"Description\":\"יצירת גיבוי נתונים מלא הכולל את כל הנתונים והמסמכים המלאים.\"}]"
+        },
+        {
+            "Name": "DealTypes",
+            "Group": "Document",
+            "Type": "String",
+            "Value": "[{\"SupportTermsEdit\":true,\"Id\":1,\"Code\":\"DealTypes.Buy\",\"Name\":\"DealTypes.Buy\",\"SortOrder\":1,\"AllowSharedProperties\":true,\"MaxProperties\":10,\"MinProperties\":1,\"MaxCustomers\":2,\"MinCustomers\":1,\"Group\":{\"Name\":\"DisplayProperty.SignCustomer\",\"Header\":\"החתמת לקוח\",\"Url\":\"DisplayProperty\"}},{\"UseSellerAsCustomer\":true,\"SupportTermsEdit\":true,\"Id\":2,\"Code\":\"DealTypes.Sell\",\"Name\":\"DealTypes.Sell\",\"SortOrder\":2,\"MaxProperties\":1,\"MinProperties\":1,\"MaxCustomers\":2,\"MinCustomers\":1,\"RequiresFullPropertyDetails\":true,\"Group\":{\"Name\":\"DisplayProperty.SignCustomer\",\"Header\":\"החתמת לקוח\",\"Url\":\"DisplayProperty\"}},{\"SupportTermsEdit\":true,\"Id\":3,\"Code\":\"DealTypes.Rent\",\"Name\":\"DealTypes.Rent\",\"SortOrder\":3,\"AllowSharedProperties\":true,\"MaxProperties\":5,\"MaxCustomers\":2,\"Group\":{\"Name\":\"DisplayProperty.SignCustomer\",\"Header\":\"החתמת לקוח\",\"Url\":\"DisplayProperty\"}},{\"UseSellerAsCustomer\":true,\"SupportTermsEdit\":true,\"Id\":4,\"Code\":\"DealTypes.Renter\",\"Name\":\"DealTypes.Renter\",\"SortOrder\":4,\"MaxProperties\":1,\"MaxCustomers\":2,\"RequiresFullPropertyDetails\":true,\"Group\":{\"Name\":\"DisplayProperty.SignCustomer\",\"Header\":\"החתמת לקוח\",\"Url\":\"DisplayProperty\"}},{\"AutoGenerateDisplayAgreement\":true,\"UseSellerAsCustomer\":true,\"SupportTermsEdit\":true,\"Id\":8,\"Code\":\"DealTypes.Sell\",\"Name\":\"DealTypes.Sell\",\"SortOrder\":2,\"MaxProperties\":1,\"MinProperties\":1,\"MaxCustomers\":2,\"MinCustomers\":1,\"RequiresFullPropertyDetails\":true,\"Group\":{\"Name\":\"SellerAgreement.SignCustomer\",\"Header\":\"החתמת בלעדיות\",\"Url\":\"SellerAgreement\"}},{\"AutoGenerateDisplayAgreement\":true,\"UseSellerAsCustomer\":true,\"SupportTermsEdit\":true,\"Id\":9,\"Code\":\"DealTypes.Renter\",\"Name\":\"DealTypes.Renter\",\"SortOrder\":4,\"MaxProperties\":1,\"MaxCustomers\":2,\"RequiresFullPropertyDetails\":true,\"Group\":{\"Name\":\"SellerAgreement.SignCustomer\",\"Header\":\"החתמת בלעדיות\",\"Url\":\"SellerAgreement\"}},{\"UseSellerAsCustomer\":true,\"SupportTermsEdit\":true,\"Id\":10,\"Code\":\"DealTypes.Sell\",\"Name\":\"DealTypes.SellOnly\",\"SortOrder\":2,\"MaxProperties\":1,\"MinProperties\":1,\"MaxCustomers\":2,\"MinCustomers\":1,\"RequiresFullPropertyDetails\":true,\"Group\":{\"Name\":\"SellerAgreement.SignCustomerSeparate\",\"Header\":\"החתמת בלעדיות - טפסים נפרדים\",\"Url\":\"SellerAgreement\"}},{\"UseSellerAsCustomer\":true,\"SupportTermsEdit\":true,\"Id\":11,\"Code\":\"DealTypes.Renter\",\"Name\":\"DealTypes.RenterOnly\",\"SortOrder\":4,\"MaxProperties\":1,\"MaxCustomers\":2,\"RequiresFullPropertyDetails\":true,\"Group\":{\"Name\":\"SellerAgreement.SignCustomerSeparate\",\"Header\":\"החתמת בלעדיות - טפסים נפרדים\",\"Url\":\"SellerAgreement\"}},{\"Fields\":[{\"Name\":\"Details\",\"Items\":[{\"Name\":\"CoopType\",\"Type\":\"comboBox\",\"Header\":\"סוג השת\\\"פ - אופן חלוקת העמלה\",\"DataSource\":[{\"Value\":\"regular\",\"Text\":\"נציג הקונה משלם לנציג המוכר את העמלה שצויינה.\"},{\"Value\":\"split\",\"Text\":\"ללא חלוקה - כל צד גובה מהלקוח שלו\"},{\"Value\":\"join\",\"Text\":\"קופה משותפת (חלוקה שווה של סכום העמלות)\"},{\"Value\":\"other\",\"Text\":\"סיכום אחר (ציין במיקום המיועד)\"}],\"Hint\":\" \",\"Default\":\"regular\"},{\"Name\":\"OtherCoop\",\"Type\":\"multiline\",\"Header\":\"סיכום אחר - פרט\",\"Hint\":\" \"}]}],\"SupportTermsEdit\":true,\"Id\":5,\"Code\":\"DealTypes.Coop\",\"Name\":\"DealTypes.Coop\",\"SortOrder\":5,\"MaxProperties\":5,\"MaxCustomers\":2,\"CustomerType\":6,\"Group\":{\"Name\":\"DisplayProperty.SignCoop\",\"Header\":\"החתמת שת\\\"פ\",\"Url\":\"DisplayProperty\"}},{\"SupportTermsEdit\":true,\"Id\":6,\"Code\":\"DealTypes.SellerReference\",\"Name\":\"DealTypes.SellerReference\",\"SortOrder\":6,\"MaxProperties\":5,\"MaxCustomers\":2,\"CustomerType\":6,\"Group\":{\"Name\":\"DisplayProperty.SignCoop\",\"Header\":\"החתמת שת\\\"פ\",\"Url\":\"DisplayProperty\"}},{\"SupportTermsEdit\":true,\"Id\":7,\"Code\":\"DealTypes.BuyerReference\",\"Name\":\"DealTypes.BuyerReference\",\"SortOrder\":7,\"MaxCustomers\":2,\"SignOnlyFirstCustomer\":true,\"CustomerType\":6,\"Group\":{\"Name\":\"DisplayProperty.SignCoop\",\"Header\":\"החתמת שת\\\"פ\",\"Url\":\"DisplayProperty\"}}]"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Deals",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Journal",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Commands",
+            "Group": "was-Home",
+            "Type": "String",
+            "Value": "[{\"Name\":\"SignBuyer\",\"Text\":\"החתם קונה / שוכר\",\"Command\":\"DisplayProperty\",\"CommandParameter\":{\"DealType\":\"DealTypes.Buy\"},\"Icon\":\"fa fa-pencil-square-o\",\"CustomClass\":\"coop-agreement-button\",\"Category\":\"default\"},{\"Name\":\"SignSellerAgreement\",\"Text\":\"החתם מוכר / משכיר\",\"Icon\":\"fa fa-pencil-square-o\",\"CustomClass\":\"seller-agreement-button\"},{\"Name\":\"SignBuyer\",\"Text\":\"החתם שת\\\"פ\",\"Command\":\"DisplayProperty\",\"CommandParameter\":{\"DealType\":\"DealTypes.Coop\"},\"Icon\":\"fa fa-pencil-square-o\",\"CustomClass\":\"coop-agreement-button\",\"Category\":\"default\"},{\"Name\":\"DisplayProperty\",\"Text\":\"הסכמים נוספים\",\"Command\":\"AppNavigate\",\"CommandParameter\":\"/Agreement\",\"Icon\":\"fa fa-pencil-square-o\",\"CustomClass\":\"display-property-button\"},{\"Name\":\"AddCustomer\",\"Icon\":\"fa fa-user-plus\",\"Category\":\"default\",\"CustomClass\":\"secondary\"},{\"Name\":\"AddProperty\",\"Icon\":\"fa fa-home\",\"Category\":\"default\",\"CustomClass\":\"secondary\"}]"
+        },
+        {
+            "Name": "SupportTermsEdit",
+            "Group": "DealTypes.Buy",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "SupportTermsEdit",
+            "Group": "DealTypes.Sell",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "DisplayProperty.DealTypes.SellerReference",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "was-AdditionalAttributes",
+            "Group": "Customer.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"שיחות\",\"Items\":[{\"Name\":\"Call1Date\",\"Hint\":\" \",\"Header\":\"תאריך שיחה 1\",\"Type\":\"date\"},{\"Name\":\"Call1Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"},{\"Name\":\"Call2Date\",\"Hint\":\" \",\"Header\":\"תאריך שיחה 2\",\"Type\":\"date\"},{\"Name\":\"Call2Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"},{\"Name\":\"Call3Date\",\"Hint\":\" \",\"Header\":\"תאריך שיחה 3\",\"Type\":\"date\"},{\"Name\":\"Call3Remarks\",\"Header\":\"הערות\",\"Hint\":\" \",\"Type\":\"multiline\"},{\"Name\":\"Call4Date\",\"Header\":\"תאריך שיחה 4\",\"Hint\":\" \",\"Type\":\"date\"},{\"Name\":\"Call4Remarks\",\"Header\":\"הערות\",\"Hint\":\" \",\"Type\":\"multiline\"},{\"Name\":\"Call5Date\",\"Header\":\"תאריך שיחה 5\",\"Hint\":\" \",\"Type\":\"date\"},{\"Name\":\"Call5Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"}]},{\"Name\":\"פגישות\",\"Items\":[{\"Name\":\"Meeting1Date\",\"Hint\":\" \",\"Header\":\"תאריך פגישה 1\",\"Type\":\"date\"},{\"Name\":\"Meeting1Location\",\"Header\":\"מיקום\",\"Hint\":\" \"},{\"Name\":\"Meeting1Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"},{\"Name\":\"Meeting2Date\",\"Hint\":\" \",\"Header\":\"תאריך פגישה 2\",\"Type\":\"date\"},{\"Name\":\"Meeting2Location\",\"Header\":\"מיקום\",\"Hint\":\" \"},{\"Name\":\"Meeting2Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"},{\"Name\":\"Meeting3Date\",\"Hint\":\" \",\"Header\":\"תאריך פגישה 3\",\"Type\":\"date\"},{\"Name\":\"Meeting3Location\",\"Header\":\"מיקום\",\"Hint\":\" \"},{\"Name\":\"Meeting3Remarks\",\"Header\":\"הערות\",\"Hint\":\" \",\"Type\":\"multiline\"}]}]"
+        },
+        {
+            "Name": "SendCopyToAdmin",
+            "Group": "Document",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "EnableShortForm",
+            "Group": "Property.Form",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "PropertyMatching",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "ExternalSubscribers",
+            "Group": "Document.SellerAgreement",
+            "Type": "Boolean",
+            "Value": "[{\"Name\":\"מדלן\",\"Email\":\"yair@simplevision.co.il\"}]"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Groups",
+            "Type": "Booelan",
+            "Value": "true"
+        },
+        {
+            "Name": "TaxInclusion",
+            "Group": "Document.DisplayProperty",
+            "Type": "Boolean",
+            "Value": "false"
+        },
+        {
+            "Name": "DefaultSharingStatus",
+            "Group": "Property.Form",
+            "Type": "Int32",
+            "Value": "1"
+        },
+        {
+            "Name": "DefaultLanguage",
+            "Group": "Application",
+            "Type": "String",
+            "Value": "he-IL"
+        },
+        {
+            "Name": "DateFormat",
+            "Group": "Application",
+            "Type": "String",
+            "Value": "MM/DD/YYYY"
+        },
+        {
+            "Name": "Enabled",
+            "Group": "Whatsapp",
+            "Type": "Boolean",
+            "Value": "false"
+        },
+        {
+            "Name": "Webhooks",
+            "Group": "Document",
+            "Type": "String",
+            "Value": "{\"Created\":[{\"Enabled\":true,\"IncludedTemplates\":[\"SellerAgreement.DealTypes.Sell\",\"SellerAgreement.DealTypes.Renter\",\"DisplayProperty.DealTypes.Buy\",\"DisplayProperty.DealTypes.Sell\",\"DisplayProperty.DealTypes.Rent\",\"DisplayProperty.DealTypes.Renter\"],\"Address\":\"https://hook.eu2.make.com/3l3kov71o5at9xej5vzoenpuf9vslsmc\",\"Method\":\"POST\",\"Headers\":{\"x-make-apikey\":\"qNJWSn9-9DfyNZf\"},\"Mappings\":{\"UserId\":\"UserId\",\"UserName\":\"User.FullName\",\"CustomerName\":\"Customer.Name\",\"CustomerPhone\":\"Customer.Phone\",\"CustomerEmail\":\"Customer.Email\",\"CustomerAddress\":\"Customer.Address\",\"CustomerCity\":\"Customer.City\",\"CustomerHomeNumber\":\"Customer.HomeNumber\",\"Type\":\"Type\",\"DealType\":\"DealType\",\"IsExclusive\":\"IsExclusive\",\"Address\":\"Property.Address\",\"City\":\"Property.City\",\"HomeNumber\":\"Property.HomeNumber\",\"AppartmentNumber\":\"Property.AppartmentNumber\",\"CreatedAt\":{\"Source\":\"CreatedAt\",\"Format\":\"yyyy-MM-dd HH:mm:ss\"},\"ExclusiveFrom\":{\"Source\":\"FromDate\",\"Format\":\"dd/MM/yyyy\"},\"ExclusiveTo\":{\"Source\":\"ToDate\",\"Format\":\"dd/MM/yyyy\"}}}]}"
+        },
+        {
+            "Name": "DefaultPercentsRate",
+            "Group": "Document.DisplayProperty",
+            "Type": "Float",
+            "Value": "5"
+        },
+        {
+            "Name": "Pictures",
+            "Group": "Property.Form",
+            "Type": "Boolean",
+            "Value": "true"
+        },
+        {
+            "Name": "NegotiationPrice",
+            "Group": "Property.Form",
+            "Type": "Boolean",
+            "Value": "false"
+        },
+        {
+            "Name": "AdditionalAttributes.po-PO",
+            "Group": "Document.DisplayProperty",
+            "Type": "String",
+            "Value": "[{\"Name\":\"תנאי החוזה\",\"Items\":[{\"Name\":\"WarrentyMonths\",\"Header\":\"חודשי אחריות/בדק\",\"Hint\":\"הזן מס חודשי אחריות לאחר גמר הביצוע\",\"Default\":36},{\"Name\":\"OverdueDays\",\"Header\":\"איחור מקסימלי (ימים)\",\"Hint\":\"הזן מס ימים לקביעת איחור\",\"Default\":14},{\"Name\":\"CancelDays\",\"Header\":\"ביטול עבודה שלא ע\\\"י הקבלן (ימים)\",\"Hint\":\"הזן מס ימים לקביעת זמן לביטול עבודה\",\"Default\":14},{\"Name\":\"DueDays\",\"Header\":\"השלמת העבודה (ימים)\",\"Hint\":\"הזן סה\\\"כ ימים להשלמת העבודה\",\"Default\":14}]},{\"Name\":\"תנאי תשלום / תשלומים\",\"Items\":[{\"Name\":\"Price\",\"Header\":\"סה\\\"כ\",\"Type\":\"price\"},{\"Name\":\"MileStone0Name\",\"Header\":\"תאר את אבן הדרך הראשונה לתשלום\"},{\"Name\":\"MileStone0Price\",\"Header\":\"סכום לתשלום - אבן דרך ראשונה\",\"Type\":\"price\"},{\"Name\":\"MileStone1Name\",\"Header\":\"תאר את אבן הדרך השניה לתשלום\"},{\"Name\":\"MileStone1Price\",\"Header\":\"סכום לתשלום - אבן דרך שניה\",\"Type\":\"price\"},{\"Name\":\"MileStone2Name\",\"Header\":\"תאר את אבן הדרך השלישית לתשלום\"},{\"Name\":\"MileStone2Price\",\"Header\":\"סכום לתשלום - אבן דרך שלישית\",\"Type\":\"price\"},{\"Name\":\"MileStone3Name\",\"Header\":\"תאר את אבן הדרך הרביעית לתשלום\"},{\"Name\":\"MileStone3Price\",\"Header\":\"סכום לתשלום - אבן דרך רביעית\",\"Type\":\"price\"},{\"Name\":\"MileStone4Name\",\"Header\":\"תאר את אבן הדרך החמישית לתשלום\"},{\"Name\":\"MileStone4Price\",\"Header\":\"סכום לתשלום - אבן דרך חמישית\",\"Type\":\"price\"},{\"Name\":\"CreditPayments\",\"Header\":\"תשלומים באשראי\"}]}]"
+        },
+        {
+            "Name": "AdditionalAttributes.mo-MO",
+            "Group": "Document.DisplayProperty",
+            "Type": "String",
+            "Value": "[{\"Name\":\"פרטים\",\"Items\":[{\"Name\":\"FromDate\",\"Type\":\"text\",\"Header\":\"שכירות מתאריך\",\"Hint\":\" \"},{\"Name\":\"ToDate\",\"Type\":\"text\",\"Header\":\"שכירות עד תאריך\",\"Hint\":\" \"},{\"Name\":\"Fee\",\"Type\":\"price\",\"Header\":\"מחיר\",\"Hint\":\" \"},{\"Name\":\"CleanFee\",\"Type\":\"price\",\"Header\":\"עמלת ניקיון\",\"Hint\":\" \"},{\"Name\":\"CreditCard\",\"Type\":\"text\",\"Header\":\"כרטיס\",\"Hint\":\" \"},{\"Name\":\"Amount\",\"Type\":\"price\",\"Header\":\"סכום\",\"Hint\":\" \"},{\"Name\":\"SecurityDeposit\",\"Type\":\"price\",\"Header\":\"פקדון\",\"Hint\":\" \"}]}]"
+        },
+        {
+            "Name": "AdditionalAttributes",
+            "Group": "Property.Form",
+            "Type": "String",
+            "Value": "[{\"Name\":\"Details\",\"Items\":[{\"Name\":\"BuildingName\",\"Type\":\"text\",\"Header\":\"שם הבניין\",\"Hint\":\" \"},{\"Name\":\"PriceRangeFrom\",\"Type\":\"price\",\"Header\":\"ממחיר\",\"Hint\":\" \"},{\"Name\":\"PriceRangeTo\",\"Type\":\"price\",\"Header\":\"עד מחיר\",\"Hint\":\" \"},{\"Name\":\"FromArea\",\"Type\":\"text\",\"Header\":\"שטח דירה/משרד מ\",\"Hint\":\" \"},{\"Name\":\"ToArea\",\"Type\":\"text\",\"Header\":\"שטח דירה/משרד עד\",\"Hint\":\" \"},{\"Name\":\"HouseFeeFrom\",\"Type\":\"price\",\"Header\":\"ועד/דמי ניהול מ\",\"Hint\":\" \"},{\"Name\":\"HouseFeeTo\",\"Type\":\"price\",\"Header\":\"ועד/דמי ניהול עד\",\"Hint\":\" \"},{\"Name\":\"ParkingFee\",\"Type\":\"text\",\"Header\":\"מחיר חניה\",\"Hint\":\" \"},{\"Name\":\"ManagementCompany\",\"Type\":\"text\",\"Header\":\"חברת ניהול\",\"Hint\":\" \"},{\"Name\":\"PropertyClass\",\"Type\":\"comboBox\",\"Header\":\"סוג הנכס\",\"DataSource\":[{\"Value\":1,\"Text\":\"A\"},{\"Value\":2,\"Text\":\"B\"},{\"Value\":3,\"Text\":\"C\"}],\"Hint\":\" \"}]}]"
+        },
+        {
+            "Name": "DefaultPropertyType",
+            "Group": "Property.Form",
+            "Type": "Int32",
+            "Value": "10"
+        },
+        {
+            "Name": "DefaultPercentsRate",
+            "Group": "Document.DisplayProperty.DealTypes.BuyerReference",
+            "Type": "Float",
+            "Value": "0.25"
+        },
+        {
+            "Name": "DealTypes.Coop",
+            "Group": "DisplayProperty",
+            "Type": "Boolean",
+            "Value": "false"
+        },
+        {
+            "Name": "was-AdditionalAttributes",
+            "Group": "Document.DisplayProperty",
+            "Type": "String",
+            "Value": "[{\"Name\":\"שאלון \",\"Items\":[{\"Name\":\"Budget\",\"Type\":\"price\"},{\"Name\":\"SearchInCity\",\"Type\":\"List.City\"},{\"Name\":\"HasMortgage\",\"Type\":\"boolean\"},{\"Name\":\"MortgageComments\",\"Type\":\"multiline\"},{\"Name\":\"IndependantSearch\",\"Type\":\"boolean\"},{\"Name\":\"IndependantSearchTime\"},{\"Name\":\"IndependantSearchFound\"},{\"Name\":\"ForInvestment\",\"Type\":\"boolean\"},{\"Name\":\"HasOwnProperty\",\"Type\":\"boolean\"},{\"Name\":\"RequestedPropertyDetails\",\"Type\":\"multiline\"},{\"Name\":\"MoreDetails\",\"Type\":\"multiline\"}]}]"
+        },
+        {
+            "Name": "was-AdditionalAttributes",
+            "Group": "Document.SellerAgreement",
+            "Type": "String",
+            "Value": "[{\"Name\":\"שיחה 1\",\"Items\":[{\"Name\":\"Call1Date\",\"Hint\":\" \",\"Header\":\"תאריך שיחה 1\",\"Type\":\"date\"},{\"Name\":\"Call1Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"},{\"Name\":\"Call2Date\",\"Hint\":\" \",\"Header\":\"תאריך שיחה 2\",\"Type\":\"date\"},{\"Name\":\"Call2Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"},{\"Name\":\"Call3Date\",\"Hint\":\" \",\"Header\":\"תאריך שיחה 3\",\"Type\":\"date\"},{\"Name\":\"Call3Remarks\",\"Header\":\"הערות\",\"Hint\":\" \",\"Type\":\"multiline\"},{\"Name\":\"Call4Date\",\"Header\":\"תאריך שיחה 4\",\"Hint\":\" \",\"Type\":\"date\"},{\"Name\":\"Call4Remarks\",\"Header\":\"הערות\",\"Hint\":\" \",\"Type\":\"multiline\"},{\"Name\":\"Call5Date\",\"Header\":\"תאריך שיחה 5\",\"Hint\":\" \",\"Type\":\"date\"},{\"Name\":\"Call5Remarks\",\"Hint\":\" \",\"Header\":\"הערות\",\"Type\":\"multiline\"}]}]"
+        },
+        {
+            "Name": "HubConnectionString",
+            "Group": "was-PushNotifications",
+            "Type": "String",
+            "Value": "Endpoint=sb://redox-notifications.servicebus.windows.net/;SharedAccessKeyName=redox;SharedAccessKey=ID0tJ/sOVCXd91SjPMtuI6I5H47ZK1Y2oWx++UVM9iE="
+        },
+        {
+            "Name": "HubName",
+            "Group": "was-PushNotifications",
+            "Type": "String",
+            "Value": "c21-push"
+        }
+    ]
+}
